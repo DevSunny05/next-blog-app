@@ -5,9 +5,9 @@ import CardList from '@/components/cardList/CardList';
 import Menu from '@/components/menu/Menu';
 import Pagination from '@/components/pagination/Pagination';
 
-export default function Home({searhParams}) {
+export default function Home({searchParams}) {
 
-  const page=parseInt(searhParams.page) || 1;
+  const page=parseInt(searchParams.page) || 1;
   return (
     <div className={styles.container}>
         <Featured/>
